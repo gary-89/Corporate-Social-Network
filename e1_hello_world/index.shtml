@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>Aria Templates training - hello world template</title>
+        <script type="text/javascript">Aria={debug:false}</script>
+        <script type="text/javascript" src="http://localhost:8080/aria/aria-templates-1.4-6.js"></script>
+        <script type="text/javascript" src="http://localhost:8080/aria/css/atskin-1.4-6.js"></script>
+    </head>
+    <body>
+
+	<!--
+        This div is the anchor of our application.
+        It is where the very first template will be loaded.
+     -->
+    <div id='output' style="margin:10px"></div>
+
+	<!-- The actual template load instruction. -->
+    <script type="text/javascript">
+		Aria.loadTemplate({
+			classpath: "training.t2_templates.e1_hello_world.view.HelloWorld",
+			div: "output"
+		});
+	</script>
+
+	</body>
+</html>
